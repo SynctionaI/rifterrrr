@@ -52,21 +52,6 @@ end
 	end,
 })
 local Button = Tab:CreateButton({
-   Name = "Collect Huge Mushroom",
-   Callback = function()
-   _G.huge =true;
-while _G.huge == true do
-    local playerHead = game.Players.LocalPlayer.Character.Head
-    for i, v in pairs(game:GetService("Workspace").MAP.Sanctuary.Cacher:GetDescendants()) do
-        if v.Name == "TouchInterest" and v.Parent then
-            firetouchinterest(game:GetService('Players').LocalPlayer.Character.HumanoidRootPart, v.Parent, 0)
-        end
-    end
-wait()
-end
-   end,
-})
-local Button = Tab:CreateButton({
    Name = "Collect Skeleton Hoverboard",
    Callback = function()
 local position = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
