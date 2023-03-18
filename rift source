@@ -1,0 +1,248 @@
+local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
+
+local Window = Rayfield:CreateWindow({
+	Name = "Sync's Pet Rift Shit",
+	LoadingTitle = "Loading Basic Functions...",
+	LoadingSubtitle = "don't leak this pls",
+	ConfigurationSaving = {
+		Enabled = false,
+		FolderName = "nil",
+		FileName = "nil"
+	},
+})
+Rayfield:Notify({
+    Title = "Pet Rift Script Loaded",
+    Content = "START HACKING 😇🕺",
+    Duration = 6.5,
+    Image = 4483362458,
+    Actions = { -- Notification Buttons
+        Ignore = {
+            Name = "Shut up.",
+            Callback = function()
+                print("👁️👄👁️")
+            end
+		},
+	},
+})
+
+local Tab = Window:CreateTab("Main") 
+local Section = Tab:CreateSection("Basic")
+
+local Button = Tab:CreateButton({
+	Name = "Auto Redeem Spawn Chests",
+	Callback = function()
+	local ohString1 = "ClaimLevelChest"
+while wait(10) do
+game:GetService("ReplicatedStorage").Remotes.Client:FireServer(ohString1)
+end
+	end,
+})
+local Button = Tab:CreateButton({
+	Name = "Collect Huge Leprachaun",
+	Callback = function()
+	_G.Active = true -- toggle on/off
+while _G.Active do
+   wait(0.1)
+for i,v in pairs(game:GetService("Workspace").Trefles:GetChildren())do
+if v:IsA("MeshPart") then
+workspace[game:GetService("Players").LocalPlayer.Name].HumanoidRootPart.CFrame = v.CFrame
+end
+end
+end
+	end,
+})
+local Button = Tab:CreateButton({
+   Name = "Collect Huge Mushroom",
+   Callback = function()
+   _G.huge =true;
+while _G.huge == true do
+    local playerHead = game.Players.LocalPlayer.Character.Head
+    for i, v in pairs(game:GetService("Workspace").MAP.Sanctuary.Cacher:GetDescendants()) do
+        if v.Name == "TouchInterest" and v.Parent then
+            firetouchinterest(game:GetService('Players').LocalPlayer.Character.HumanoidRootPart, v.Parent, 0)
+        end
+    end
+wait()
+end
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Collect Skeleton Hoverboard",
+   Callback = function()
+local position = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            local folder = game:GetService("Workspace").Debris
+
+            for i, v in pairs(folder:GetChildren()) do
+                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+                wait(0.1)
+                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = position
+            end
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Auto Redeem Gifts",
+   Callback = function()
+       while wait(1) do
+local ohString1 = "OpenFreeGift"
+local ohNumber2 = 2
+
+game:GetService("ReplicatedStorage").Remotes.Client:FireServer(ohString1, ohNumber2)
+       while wait(1) do
+local ohString1 = "OpenFreeGift"
+local ohNumber2 = 3
+
+game:GetService("ReplicatedStorage").Remotes.Client:FireServer(ohString1, ohNumber2)
+       while wait(1) do
+local ohString1 = "OpenFreeGift"
+local ohNumber2 = 3
+
+game:GetService("ReplicatedStorage").Remotes.Client:FireServer(ohString1, ohNumber2)
+       while wait(1) do
+local ohString1 = "OpenFreeGift"
+local ohNumber2 = 4
+
+game:GetService("ReplicatedStorage").Remotes.Client:FireServer(ohString1, ohNumber2)
+       while wait(1) do
+local ohString1 = "OpenFreeGift"
+local ohNumber2 = 5
+
+game:GetService("ReplicatedStorage").Remotes.Client:FireServer(ohString1, ohNumber2)
+       while wait(1) do
+local ohString1 = "OpenFreeGift"
+local ohNumber2 = 6
+
+game:GetService("ReplicatedStorage").Remotes.Client:FireServer(ohString1, ohNumber2)
+       while wait(1) do
+local ohString1 = "OpenFreeGift"
+local ohNumber2 = 7
+
+game:GetService("ReplicatedStorage").Remotes.Client:FireServer(ohString1, ohNumber2)
+       while wait(1) do
+local ohString1 = "OpenFreeGift"
+local ohNumber2 = 8
+
+game:GetService("ReplicatedStorage").Remotes.Client:FireServer(ohString1, ohNumber2)
+       while wait(1) do
+local ohString1 = "OpenFreeGift"
+local ohNumber2 = 9
+
+game:GetService("ReplicatedStorage").Remotes.Client:FireServer(ohString1, ohNumber2)
+       while wait(1) do
+local ohString1 = "OpenFreeGift"
+local ohNumber2 = 10
+
+game:GetService("ReplicatedStorage").Remotes.Client:FireServer(ohString1, ohNumber2)
+       while wait(1) do
+local ohString1 = "OpenFreeGift"
+local ohNumber2 = 11
+
+game:GetService("ReplicatedStorage").Remotes.Client:FireServer(ohString1, ohNumber2)
+       while wait(1) do
+local ohString1 = "OpenFreeGift"
+local ohNumber2 = 12
+
+game:GetService("ReplicatedStorage").Remotes.Client:FireServer(ohString1, ohNumber2)
+
+
+end
+end
+end
+end
+end
+end
+end
+end
+end
+end
+end
+end
+
+   end,
+})
+local Tab = Window:CreateTab("Empty For Now") 
+local Section = Tab:CreateSection("Empty for now")
+
+local Button = Tab:CreateButton({
+	Name = "Empty",
+	Callback = function()
+----Script goes here
+	end,
+})
+
+local Tab = Window:CreateTab("Extras") 
+local Button = Tab:CreateButton({
+	Name = "FPS Booster",
+	Callback = function()
+	-- Made by RIP#6666
+_G.Settings = {
+    Players = {
+        ["Ignore Me"] = true, -- Ignore your Character
+        ["Ignore Others"] = true -- Ignore other Characters
+    },
+    Meshes = {
+        Destroy = false, -- Destroy Meshes
+        LowDetail = true -- Low detail meshes (NOT SURE IT DOES ANYTHING)
+    },
+    Images = {
+        Invisible = true, -- Invisible Images
+        LowDetail = false, -- Low detail images (NOT SURE IT DOES ANYTHING)
+        Destroy = false, -- Destroy Images
+    },
+    Other = {
+        ["No Particles"] = true, -- Disables all ParticleEmitter, Trail, Smoke, Fire and Sparkles
+        ["No Camera Effects"] = true, -- Disables all PostEffect's (Camera/Lighting Effects)
+        ["No Explosions"] = true, -- Makes Explosion's invisible
+        ["No Clothes"] = true, -- Removes Clothing from the game
+        ["Low Water Graphics"] = true, -- Removes Water Quality
+        ["No Shadows"] = true, -- Remove Shadows
+        ["Low Rendering"] = true, -- Lower Rendering
+        ["Low Quality Parts"] = true -- Lower quality parts
+    }
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CasperFlyModz/discord.gg-rips/main/FPSBooster.lua"))()
+	end,
+})
+
+
+local Label = Tab:CreateLabel("V=Autoclick / B=Mouselock")
+local Button = Tab:CreateButton({
+	Name = "In-game Autoclicker (1 sec delay)",
+	Callback = function()
+		getgenv().Settings = {
+    ["Auto Click Keybind"] = "V",
+    ["Lock Mouse Position Keybind"] = "B",
+    ["Right Click"] = false,
+    ["GUI"] = true,
+    ["Delay"] = 1 
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/BimbusCoder/Script/main/Auto%20Clicker.lua"))()
+	end,
+})
+local Button = Tab:CreateButton({
+	Name = "Infinite Yield Admin",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source", true))()
+	end,
+})
+local Button = Tab:CreateButton({
+	Name = "Rejoin Server",
+	Callback = function()
+		game:GetService'TeleportService':TeleportToPlaceInstance(game.PlaceId,game.JobId,game:GetService'Players'.LocalPlayer)
+	end,
+})
+local Button = Tab:CreateButton({
+	Name = "Anti AFK",
+	Callback = function()
+			while wait(1) do
+		Players.LocalPlayer.Idled:Connect(function()
+			local VirtualUser = game:GetService("VirtualUser")
+			VirtualUser:CaptureController()
+			VirtualUser:ClickButton2(Vector2.new())
+		end)
+		end
+	end,
+})
+--------------------------
+local Tab = Window:CreateTab("Library Maker🕺")
+local Paragraph = Tab:CreateParagraph({Title = "Made by", Content = "Synctional 🕺🕺💃💃"})
+Rayfield:LoadConfiguration()
